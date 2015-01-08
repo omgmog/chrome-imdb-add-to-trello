@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+
+    "name": "Add an IMDb movie to trello",
+    "description": "This extension will let you add a movie on IMDb to a list on a board on Trello.",
+    "version": "1.0",
+    "options_page": "options.html",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+       "tabs",
+       "https://api.trello.com/",
+       "http://www.imdb.com/title/*",
+       "https://www.imdb.com/title/*"
+    ],
+    "page_action": {
+        "default_title": "Add to Trello",
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "web_accessible_resources":["options.html"],
+    "content_security_policy": "script-src 'self' https://api.trello.com; object-src 'self'"
+}
