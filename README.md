@@ -1,4 +1,4 @@
-chrome-add-link-to-trello
+chrome-imdb-add-to-trello
 =========================
 
 This extension will let you add a movie on IMDb to a list on a board on Trello.
